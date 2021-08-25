@@ -1,0 +1,87 @@
+[2021-04-07 02:25:10] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('Directory name ...', Array)
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(RuntimeException))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(403): App\\Exceptions\\Handler->report(Object(RuntimeException))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(RuntimeException))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#9 {main}
+"} 
+[2021-04-07 02:25:10] laravel.ERROR: Directory name must not be empty. {"exception":"[object] (RuntimeException(code: 0): Directory name must not be empty. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:48)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(48): RecursiveDirectoryIterator->__construct('', 4096)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(744): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(615): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(88): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(65): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(135): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#9 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(109): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#12 {main}
+"} 
+[2021-04-07 02:29:59] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('Directory name ...', Array)
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(RuntimeException))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(403): App\\Exceptions\\Handler->report(Object(RuntimeException))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(RuntimeException))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#9 {main}
+"} 
+[2021-04-07 02:29:59] laravel.ERROR: Directory name must not be empty. {"exception":"[object] (RuntimeException(code: 0): Directory name must not be empty. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:48)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(48): RecursiveDirectoryIterator->__construct('', 4096)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(744): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(615): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(88): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(65): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(135): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#9 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(109): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#12 {main}
+"} 
+[2021-04-07 02:30:02] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(547): Illuminate\\Log\\LogManager->driver()
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(123): Illuminate\\Log\\LogManager->error('Directory name ...', Array)
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\app\\Exceptions\\Handler.php(39): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(RuntimeException))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(403): App\\Exceptions\\Handler->report(Object(RuntimeException))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(111): Illuminate\\Foundation\\Http\\Kernel->reportException(Object(RuntimeException))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#9 {main}
+"} 
+[2021-04-07 02:30:02] laravel.ERROR: Directory name must not be empty. {"exception":"[object] (RuntimeException(code: 0): Directory name must not be empty. at C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php:48)
+[stacktrace]
+#0 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Iterator\\RecursiveDirectoryIterator.php(48): RecursiveDirectoryIterator->__construct('', 4096)
+#1 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(744): Symfony\\Component\\Finder\\Iterator\\RecursiveDirectoryIterator->__construct('', 4096, false)
+#2 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\symfony\\finder\\Finder.php(615): Symfony\\Component\\Finder\\Finder->searchInDirectory('')
+#3 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(88): Symfony\\Component\\Finder\\Finder->getIterator()
+#4 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(65): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->getConfigurationFiles(Object(Illuminate\\Foundation\\Application))
+#5 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#6 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#7 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#8 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(135): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#9 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(109): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#10 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#11 C:\\Rayhan\\ApiServer\\htdocs\\lara-test\\index.php(21): require_once('C:\\\\Rayhan\\\\ApiSe...')
+#12 {main}
+"} 
