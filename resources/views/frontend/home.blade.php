@@ -91,7 +91,7 @@
             <!-- End .row -->
 
 
-            
+
             <!-- Main content -->
             <section class="content">
                 <!-- Small boxes (Stat box) -->
@@ -111,68 +111,7 @@
                                 {{-- <h3 class="box-title"></h3> --}}
                             </div>
                             <!-- /.box-header -->
-                            <div class="box-body">
-                                <div class="row">
-                                    <div class="col-md-7">
 
-                                        <br>
-
-
-                                        <div class="row products" id="products">
-                                            <div class="col-md-12">
-                                                <div class="timeline-body">
-                                                    @foreach ($products as $product)
-                                                        <div class="col-md-3" id="{{ $product->id }}"
-                                                            style="margin-left: 10px; margin-right: 10px;">
-                                                            <div class="row text-center">
-                                                                <span class="" style="margin-left: 10px;">
-                                                                    {{ mb_strimwidth($product->title, 0, 25, '...') }}
-                                                                </span>
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                <img src="{{ $product->image_path }}" height="100" width="150"
-                                                                    class="margin" style=""
-                                                                    onclick="onImageClick({{ $product->id }}, {{ $product->unit_price }}, '{{ strval($product->title) }}', '{{ strval($product->art_no) }}', {{ $product->stock }})"
-                                                                    id="img-{{ $product->id }}">
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                Stock: {{ $product->stock }}
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row bundles" id="bundles">
-                                            <div class="col-md-12">
-                                                <div class="timeline-body">
-                                                    @foreach ($bundles as $bundle)
-                                                        <div class="col-md-3" id="{{ $bundle->id }}"
-                                                            style="margin-left: 10px; margin-right: 10px;">
-                                                            <div class="row text-center">
-                                                                <span class="" style="margin-left: 10px;">
-                                                                    {{ mb_strimwidth($bundle->name, 0, 25, '...') }}
-                                                                </span>
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                <img src="public/uploads/default.png" height="100" width="150"
-                                                                    class="margin" style=""
-                                                                    onclick="selectBundle({{ $bundle->id }})"
-                                                                    id="img-bn-{{ $bundle->id }}">
-                                                            </div>
-                                                            <div class="row text-center">
-                                                            </div>
-                                                        </div>
-                                                    @endforeach
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                             <!-- /.box-body -->
                         </div>
                     </div>
@@ -206,29 +145,25 @@
                         }
                     }
                 }'>
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/1.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/2.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/3.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/4.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/5.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="{{asset('public')}}/assets/images/brands/6.png" alt="Brand Name">
-                </a>
+                @foreach ($products as $product)
+                           <div class="col-md-6" id="{{ $product->id }}"
+                             style="margin-left: 10px; margin-right: 10px;">
+                             <div class="row text-center">
+                                 <span class="" style="margin-left: 10px;">
+                                     {{ mb_strimwidth($product->title, 0, 25, '...') }}
+                                 </span>
+                             </div>
+                             <div class="row text-center">
+                                 <img src="{{ $product->image_path }}" height="100" width="150"
+                                     class="margin" style=""
+                                     onclick="onImageClick({{ $product->id }}, {{ $product->unit_price }}, '{{ strval($product->title) }}', '{{ strval($product->art_no) }}', {{ $product->stock }})"
+                                     id="img-{{ $product->id }}">
+                             </div>
+                             <div class="row text-center">
+                                 Stock: {{ $product->stock }}
+                             </div>
+                         </div>
+                @endforeach
             </div><!-- End .owl-carousel -->
         </div><!-- End .container -->
     </div><!-- End .bg-lighter -->

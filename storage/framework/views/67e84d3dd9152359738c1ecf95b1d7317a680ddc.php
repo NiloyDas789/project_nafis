@@ -90,7 +90,7 @@
             <!-- End .row -->
 
 
-            
+
             <!-- Main content -->
             <section class="content">
                 <!-- Small boxes (Stat box) -->
@@ -111,71 +111,7 @@
                                 
                             </div>
                             <!-- /.box-header -->
-                            <div class="box-body">
-                                <div class="row">
-                                    <div class="col-md-7">
 
-                                        <br>
-
-
-                                        <div class="row products" id="products">
-                                            <div class="col-md-12">
-                                                <div class="timeline-body">
-                                                    <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                        <div class="col-md-3" id="<?php echo e($product->id); ?>"
-                                                            style="margin-left: 10px; margin-right: 10px;">
-                                                            <div class="row text-center">
-                                                                <span class="" style="margin-left: 10px;">
-                                                                    <?php echo e(mb_strimwidth($product->title, 0, 25, '...')); ?>
-
-                                                                </span>
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                <img src="<?php echo e($product->image_path); ?>" height="100" width="150"
-                                                                    class="margin" style=""
-                                                                    onclick="onImageClick(<?php echo e($product->id); ?>, <?php echo e($product->unit_price); ?>, '<?php echo e(strval($product->title)); ?>', '<?php echo e(strval($product->art_no)); ?>', <?php echo e($product->stock); ?>)"
-                                                                    id="img-<?php echo e($product->id); ?>">
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                Stock: <?php echo e($product->stock); ?>
-
-                                                            </div>
-                                                        </div>
-                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                        <div class="row bundles" id="bundles">
-                                            <div class="col-md-12">
-                                                <div class="timeline-body">
-                                                    <?php $__currentLoopData = $bundles; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $bundle): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                        <div class="col-md-3" id="<?php echo e($bundle->id); ?>"
-                                                            style="margin-left: 10px; margin-right: 10px;">
-                                                            <div class="row text-center">
-                                                                <span class="" style="margin-left: 10px;">
-                                                                    <?php echo e(mb_strimwidth($bundle->name, 0, 25, '...')); ?>
-
-                                                                </span>
-                                                            </div>
-                                                            <div class="row text-center">
-                                                                <img src="public/uploads/default.png" height="100" width="150"
-                                                                    class="margin" style=""
-                                                                    onclick="selectBundle(<?php echo e($bundle->id); ?>)"
-                                                                    id="img-bn-<?php echo e($bundle->id); ?>">
-                                                            </div>
-                                                            <div class="row text-center">
-                                                            </div>
-                                                        </div>
-                                                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
                             <!-- /.box-body -->
                         </div>
                     </div>
@@ -209,29 +145,27 @@
                         }
                     }
                 }'>
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/1.png" alt="Brand Name">
-                </a>
+                <?php $__currentLoopData = $products; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $product): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                           <div class="col-md-6" id="<?php echo e($product->id); ?>"
+                             style="margin-left: 10px; margin-right: 10px;">
+                             <div class="row text-center">
+                                 <span class="" style="margin-left: 10px;">
+                                     <?php echo e(mb_strimwidth($product->title, 0, 25, '...')); ?>
 
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/2.png" alt="Brand Name">
-                </a>
+                                 </span>
+                             </div>
+                             <div class="row text-center">
+                                 <img src="<?php echo e($product->image_path); ?>" height="100" width="150"
+                                     class="margin" style=""
+                                     onclick="onImageClick(<?php echo e($product->id); ?>, <?php echo e($product->unit_price); ?>, '<?php echo e(strval($product->title)); ?>', '<?php echo e(strval($product->art_no)); ?>', <?php echo e($product->stock); ?>)"
+                                     id="img-<?php echo e($product->id); ?>">
+                             </div>
+                             <div class="row text-center">
+                                 Stock: <?php echo e($product->stock); ?>
 
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/3.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/4.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/5.png" alt="Brand Name">
-                </a>
-
-                <a href="#" class="brand">
-                    <img src="<?php echo e(asset('public')); ?>/assets/images/brands/6.png" alt="Brand Name">
-                </a>
+                             </div>
+                         </div>
+                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </div><!-- End .owl-carousel -->
         </div><!-- End .container -->
     </div><!-- End .bg-lighter -->

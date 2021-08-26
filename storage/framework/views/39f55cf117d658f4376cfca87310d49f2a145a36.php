@@ -292,7 +292,7 @@
                         </div><!-- End .header-search -->
 
 
-                        <div id="mySidebar" class="sidebar">
+                        <div id="mySidebar" class="sidebar" style="    z-index: 2;">
                             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                             <div class="col-md-12">
                                 <h3>Customer and selected items</h3>
